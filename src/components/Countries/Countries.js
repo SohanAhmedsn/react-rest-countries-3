@@ -24,7 +24,10 @@ const Countries = () => {
 
             <div className="countries-container">
             {
-                countries.map(county => <Country country={county}></Country>)
+                countries.map(county => <Country 
+                    key={county.capital}
+                    country={county}
+                    ></Country>)
             }
             </div>
         </div>
